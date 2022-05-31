@@ -3,8 +3,8 @@
 
 $text-color: #252424;
 $background-color: #e1e1e1;
-$header-font: "Mulish";
-$body-font: "Commissioner";
+$header-font: 'Mulish', sans-serif;
+$body-font: 'Commissioner', sans-serif;
 
 @import "partials/projects";
 @import "partials/choice";
