@@ -20,7 +20,7 @@ $body-font: 'Commissioner', sans-serif;
 }
 
 body {
-    background-color: white;
+    background-color: $background-color;
     color: $text-color;
     font-family: $body-font;
 }
