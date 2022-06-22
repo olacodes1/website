@@ -31,11 +31,17 @@
             margin-bottom: .6em;
         }
 
-        a {
+        .links {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            margin-right: .8em;
+            margin-right: .6em;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-content: flex-end;
+            }
         }
     }
 }

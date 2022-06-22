@@ -32,11 +32,17 @@
             margin-bottom: 1em;
         }
 
-        a {
+        .figlink {
             display: flex;
             justify-content: flex-start;
             align-items: center;
             margin-right: .8em;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

@@ -4,7 +4,7 @@
 $text-color: #252424;
 $background-color: #e1e1e1;
 $paragraph-color: #4e4e4e;
-$header-font: 'Mulish', sans-serif;
+$header-font: 'Zodiak', sans-serif;
 $body-font: 'Commissioner', sans-serif;
 
 @import "partials/projects";
@@ -20,6 +20,16 @@ $body-font: 'Commissioner', sans-serif;
     box-sizing: border-box;
 }
 
+
+h1 {
+    font-family: $header-font !important;
+}
+
+strong a {
+    text-decoration: underline;
+}
+
+
 body {
     background-color: $background-color;
     color: $text-color;
@@ -33,9 +43,36 @@ section, footer {
 
 a {
     color: $text-color;
-    font-family: $header-font;
+    font-family: $body-font;
     font-weight: bold;
     text-decoration: none;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: .175rem;
+        background-color: $paragraph-color;
+        width: 100%;
+        left: 0;
+        bottom: 0px;
+        transform: scale(0, 1);
+        transform-origin: 100% 100%;
+        transition: transform .2s ease;
+    }
+
+    &:hover::after {
+        transform: scale(1, 1);
+        transform-origin: 0% 100%;
+    }
+}
+
+main {
+    background-color: $background-color;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1em;
 }
 
 nav {
@@ -71,6 +108,10 @@ header {
             margin-bottom: 1em;
             line-height: 1.5;
             letter-spacing: .4px;
+
+            a {
+                text-decoration: none;
+            }
         }
 
         .connect {
@@ -90,11 +131,17 @@ header {
                 align-items: center;
                 flex-wrap: wrap;
 
-                a {
+                .links {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     margin-right: .6em;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
             }
         }
@@ -125,6 +172,7 @@ p{
     h1 {
         font-size: 2em;
         margin-bottom: 0.6em;
+        font-family: $header-font;
     }
 
     p {
