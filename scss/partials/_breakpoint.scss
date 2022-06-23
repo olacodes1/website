@@ -6,14 +6,22 @@
     .about-me p {
         width: 100% !important;
     }
+
+    .work-img {
+        width: 60%;
+    }
+
+    .work-text {
+        width: 37%;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    header, section, footer, nav {
+    main {
         padding: 0 6em;
     }
     header {
-        margin: 2em 0 !important;
+        margin: 4em 0 !important;
 
         .hero-text {
             width: 60% !important;
@@ -33,11 +41,44 @@
     .figma{
         padding-left: 1em !important;
     }
+
+    .new-heading {
+        margin-bottom: 1em !important;
+    }
+
+    .work-new {
+        flex-direction: column;
+        margin-bottom: 4em !important;
+
+        &:nth-child(3) { 
+            flex-direction: column-reverse;
+        }
+
+        div {
+            width: 100% !important;
+            
+
+            &.work-img {
+                margin-bottom: 1em;
+            }
+
+            &.work-text {
+                h1 {
+                    margin-bottom: 0.4em !important;
+                }
+
+                p {
+                    margin-bottom: 1.5em !important;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
-    header, section, footer, nav {
+    main {
         padding: 0 4em !important;
+        padding-bottom: 1.5em !important;
     }
     header {
         flex-direction: column;
@@ -71,6 +112,9 @@
     }
 
     footer {
+        padding: 4em !important;
+        padding-bottom: 1em !important;
+
         h1 {
             font-size: 3em !important;
         }
@@ -85,6 +129,7 @@
         }
 
         .footer {
+            padding-bottom: 2em !important;
             p, a {
                 font-size: 14px !important;
             }
@@ -109,7 +154,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    header, section, footer, nav {
+    main {
         padding: 0 2em !important;
     }
     .works {
@@ -157,6 +202,27 @@
             }
         }
     }
+
+    footer {
+        padding: 0 !important;
+        padding-bottom: 2em !important;
+
+        .footer {
+            // padding: 0 !important;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .social {
+                width: 80% !important;
+
+                a{
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -172,16 +238,31 @@
 
         .social {
             margin-bottom: 2em !important;
+            width: 80%;
 
             a {
                 margin-left: 1.5em !important;
             }
         }
     }
+
+    .footer {
+        padding-bottom: 2em !important;
+        justify-content: flex-start;
+        height: 100px;
+
+        h1 {
+            font-size: 1.6em !important;
+        }
+
+        p {
+            margin-bottom: 2em !important;
+        }
+    }
 }
 
 @media screen and (max-width: 475px) {
-    header, section, footer, nav {
+    main {
         padding: 0 2em !important;
     }
 
@@ -220,8 +301,12 @@
         font-size: 14px;
     }
 
-    header, section, footer, nav {
+    main {
         padding: 0 1em !important;
+    }
+
+    .full-width h1 {
+        text-align: center;
     }
 
     

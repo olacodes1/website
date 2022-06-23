@@ -1,47 +1,112 @@
-.projects h4 {
-    margin-bottom: 2em;
-}
+// .projects h4 {
+//     margin-bottom: 2em;
+// }
 
-.works {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
+// .works {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-wrap: wrap;
+// }
 
-.work {
-    width: 49%;
-    margin-bottom: 2em;
+// .work {
+//     width: 49%;
+//     margin-bottom: 2em;
 
-   .cover img {
-        width:100%;
-        object-fit: cover;
-        margin-bottom: 1.4em;
+//    .cover img {
+//         width:100%;
+//         object-fit: cover;
+//         margin-bottom: 1.4em;
+//     }
+
+//     .work-info {
+//         h1 {
+//             font-size: 1.6em;
+//             font-family: $header-font;
+//             margin-bottom: .3em;
+//         }
+
+//         p {
+//             letter-spacing: .4px;
+//             margin-bottom: .6em;
+//         }
+
+//         .links {
+//             display: flex;
+//             justify-content: flex-start;
+//             align-items: center;
+//             margin-right: .6em;
+
+//             a {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//             }
+//         }
+//     }
+// }
+
+
+
+.new-work {
+    width: 100%;
+    margin-bottom: 7em;
+
+    h1.new-heading {
+        margin-bottom: 2em;
     }
 
-    .work-info {
-        h1 {
-            font-size: 1.6em;
-            font-family: $header-font;
-            margin-bottom: .3em;
-        }
+    .work-new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3em;
 
-        p {
-            letter-spacing: .4px;
-            margin-bottom: .6em;
-        }
-
-        .links {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            margin-right: .6em;
-
-            a {
-                display: flex;
-                justify-content: center;
-                align-content: flex-end;
+        .work-img {
+            width: 65%;
+            img {
+                width: 100%;
             }
+        }
+        .work-text {
+            width: 30%;
+
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: .8em;
+            }
+
+            p {
+                margin-bottom: 1em;
+            }
+
+            div {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;  
+                
+                
+                a {
+                    color: $text-color;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;  
+        
+                    img {
+                        margin-left: .6em;
+                        height: 50%;
+                        object-fit: cover;
+                    }
+                }
+                p {
+                    color: $text-color;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                }
+            }
+
         }
     }
 }
