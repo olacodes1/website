@@ -18,6 +18,7 @@ $body-font: 'Commissioner', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 html {
@@ -41,6 +42,39 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.inner-cursor {
+    position: fixed;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: $background-color;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width .5s, height .5s;
+    z-index:  1200;
+}
+
+.inner-cursor.grow {
+    width: 35px;
+    height: 35px;
+    transition: width .5s, height .5s;
+}
+
+.outer-cursor {
+    position: fixed;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid $background-color;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index:  1200;
 }
 
 main, footer {
