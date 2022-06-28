@@ -104,6 +104,10 @@
         font-size: 1em !important;
     }
 
+    .type span {
+        font-size: 14px;
+    }
+
     .contribute {
         h3 {
             width: 100% !important;
@@ -182,6 +186,14 @@
             width: 100% !important;
 
         }
+    }
+
+    .type span {
+        font-size: 14px;
+    }
+    .type .dot {
+        width: 5px;
+        height: 5px;
     }
     
     .figma {

@@ -25,7 +25,7 @@ footer {
     
         }
         a {
-            color: #FCB96B !important;
+            color: #00B994 !important;
             font-size: 1.5em;
             display: flex;
             justify-content: center;
@@ -38,7 +38,7 @@ footer {
             }
 
             &::after {
-                background-color: #FCB96B !important;
+                background-color: #00B994 !important;
                 bottom: -3px;
             }
         }
@@ -73,11 +73,11 @@ footer {
             align-items: center;
 
             &:hover {
-                color: #FCB96B;
+                color: #00B994;
             }
 
             &::after {
-                background-color: #FCB96B !important;
+                background-color: #00B994 !important;
                 bottom: -3px;
             }
         }
